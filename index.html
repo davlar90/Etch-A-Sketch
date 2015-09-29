@@ -1,0 +1,28 @@
+<!doctype HTML>
+<html>
+<head>
+	<title>Etch-A-Sketch</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/grid.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	</head>
+<body>
+
+	<h1>Etch-A-Sketch</h1>
+	<div id="topContent">
+	
+	<form id="formSize">Put a number here: <input type="text" name="gridSize"></form>
+	<button id="changeSizeButton" onclick="buttonClicked(formSize)">Change size!</button>
+	
+	<form action="">
+	<input type="radio" name="color" id="blue" value="blue" onclick="colorChanger(blue)"><div id="cblue"></div><br>
+	<input type="radio" name="color" id="red" value="red" onclick="colorChanger(red)"><div id="cred"></div><br>
+	<input type="radio" name="color" id="green" value="green" onclick="colorChanger(green)"><div id="cgreen"></div></form>
+	<button onclick="buttonResetClicked()">Reset</button>
+	</div>
+	<div id="container"></div>
+	<p>Project made for <a href="http://www.theodinproject.com/">TheOdinProject.com</a> by David Larsson<p>
+
+
+</body>
+</html>
